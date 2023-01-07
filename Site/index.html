@@ -1,0 +1,618 @@
+<head>
+    <title>MatrizAuto</title>
+    <link href="estilos.css" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+   
+
+    <div class="flex-container" id="tab"> 
+        <div class="flex-container"  id="menu1">
+            <div><img src="logo.svg" ></div>
+            <div><img src="img2.png" style="width:30px;height:30px;"></div>
+            <div><img src="img1.png" style="width:30px;height:30px;"> </div>            
+        </div>
+        <b><div class="flex-container"id="textoheader">
+            <div><a href="https://www.matrizauto.pt/pt/carro-usado/">Viaturas</a></div>
+            <div style="padding-left: 20px;"><a href="https://vendaoseucarro.matrizauto.pt">Vender o meu carro</a></div>  
+            <div style="padding-left: 20px;"><a href="https://www.matrizauto.pt/pt/noticias/">Notícias</a></div>    
+            <div style="padding-left: 20px;"><a href="https://www.matrizauto.pt/pt/matrizauto/onde-estamos/">Contactos & Lojas</a></div>
+        </div></b>            
+        <div class="flex-container"  id="menu3">
+            <div> <a href="https://www.matrizauto.pt/pt/clientes/login.php"><img id="logosutilizador" src="ic_user.svg"></a></div>
+            <div> <a href="https://www.matrizauto.pt/pt/loja/carrinho.php"><img src="ic_shoppingcart.svg"></a></div>
+            <div> <a href="https://www.matrizauto.pt/pt/favoritos/"><img style="width:15px;height:15px;" src="coracao.png"></a></div>  
+            <div> <a href="https://www.matrizauto.pt/pt/comparador/"><img style="width:15px;height:15px;" src="carro-icon.png"></a></div>          
+        </div>
+    </div>
+    <div id="backgroundimage">
+        <div style="padding: 50 0 0 50;">
+            <fieldset id="fieldset">
+            <div class="flex-container" style="padding-top: 15px; gap: 5%;">
+                <button style="border-top: 0px; border-left: 0px; border-right: 0px; border-color: red; background-color: white; padding-bottom: 10px;">Comprar</button>
+
+                <button style="border: 0; background-color: white; padding-bottom: 13px;" >Vender</button></a>
+            </div>
+            <table style="padding-top: 20;">
+                <tr>
+                    <td>
+                        <select id="Marca">
+                            <option>Marca</option>
+                            <option value="Alfa_Romeo">ALFA ROMEO</option>
+                            <option value="Audi">AUDI</option>
+                            <option value="Volvo">VOLVO</option>  
+                            <option value="BMW">BMW</option>
+                            <option value="Citroen">CITROEN</option>
+                            <option value="Dacia">DACIA</option>
+                            <option value="DS">DS</option>
+                            <option value="Fiat">FIAT</option>
+                            <option value="Ford">FORD</option>
+                            <option value="Honda">HONDA</option>
+                            <option value="Hyundai">HYUNDAI</option>
+                            <option value="Isuzu">ISUZU</option>
+                            <option value="Jaguar">JAGUAR</option>
+                            <option value="Jeep">JEEP</option>
+                            <option value="Kia">KIA</option>
+                            <option value="Land_Rover">LAND ROVER</option>
+                            <option value="Lexus">LEXUS</option>
+                            <option value="Mazda">MAZDA</option>
+                            <option value="Mercedez_Benz">MERCEDEZ BENZ</option>
+                            <option value="Mini">MINI</option>
+                            <option value="Nissan">NISSAN</option>
+                            <option value="Opel">OPEL</option>
+                            <option value="Peugeot">PEUGEOT</option>
+                            <option value="Seat">SEAT</option>
+                            <option value="Skoda">SKODA</option>
+                            <option value="Smart">SMART</option>
+                            <option value="Toyota">TOYOTA</option>
+                            <option value="Volkswagen">VOLKSWAGEN</option>
+                            <option value="Volvo">VOLVO</option>
+
+                        </select>
+                    </td>
+                    <td style="padding-left: 50;">
+                        <select id="Modelo" disabled>
+                            <option>Modelo</option>
+                        </select>                    
+                    </td>
+                </tr>    
+                <tr>
+                    <td style="padding-top: 20px;">
+                        <select id="selectmenu">
+                            <option disabled>Quilometros até</option>
+                            <option>0</option>
+                            <option>5000</option>
+                            <option>10000</option>
+                            <option>15000</option>
+                            <option>20000</option>
+                            <option>25000</option>
+                            <option>30000</option>
+                            <option>35000</option>
+                            <option>40000</option>
+                            <option>45000</option>
+                            <option>50000</option>
+                            <option>55000</option>
+                            <option>60000</option>
+                            <option>65000</option>
+                            <option>70000</option>
+                            <option>75000</option>
+                            <option>80000</option>
+                            <option>85000</option>
+                            <option>90000</option>
+                            <option>95000</option>
+                            <option>100000</option>
+                            <option>105000</option>
+                            <option>110000</option>
+                            <option>115000</option>
+                            <option>120000</option>
+                            <option>125000</option>
+                            <option>130000</option>
+                            <option>135000</option>
+                            <option>140000</option>
+                            <option>145000</option>
+                            <option>150000</option>
+                            <option>155000</option>
+                            <option>160000</option>
+                        </select>
+                    </td>
+                    <td style="padding-top: 20px; padding-left: 50;">
+                        <select id="selectmenu">
+                            <option disabled >Anos até</option>
+                            <option>2023</option>
+                            <option>2022</option>
+                            <option>2021</option>
+                            <option>2020</option>
+                            <option>2019</option>
+                            <option>2018</option>
+                            <option>2017</option>
+                            <option>2016</option>
+                            <option>2015</option>
+                            <option>2014</option>
+                            <option>2013</option>
+                            <option>2012</option>
+                        </select>  
+                    </td>
+                </tr>   
+                <tr>
+                    <td style="padding-top: 20px;">
+                        <select id="selectmenu">
+                            <option disabled>Combustível</option>
+                            <option>DIESEL</option>
+                            <option>ELÉTRICO</option>
+                            <option>GASOLINA</option>
+                            <option>GPL</option>
+                            <option>HÍBRIDO (DIESEL)</option>
+                            <option>HÍBRIDO (GASOLINA)</option>
+                        </select>
+                    </td>
+                    <td style="padding-top: 20px; padding-left: 50;">
+                        <select id="selectmenu">
+                            <option disabled>Transmissão</option>
+                            <option>Automática</option>
+                            <option>Manual</option>
+                        </select>  
+                    </td>
+                </tr>         
+            </table>
+            <div style="padding-top: 25; padding-bottom: 15px;">
+                 <button style="width: 375px; height: 50px; background-color: red; color: white; border: 0; border-radius: 12px;"><b>Procurar</b></button>                
+            </div>
+        </fieldset></div>
+    </div>
+    
+    <div id="corpo">
+        
+
+        <div class="wrapper">
+            <div class="promocoes">
+                <div class="campanhas">
+                    <a href="https://www.matrizauto.pt/pt/oportunidades-matrizauto/"><img class="esquerda" src="banner_campanhas_20063813463ac3814d5504.png" alt=""></a>
+                </div>
+                <div class="campanhas">
+                    <a href="https://www.matrizauto.pt/pt/matrizauto-standvirtual/"><img src="banner_campanhas_416x300_1519145967632c934743478.png" alt=""></a>
+                </div>
+                <div class="campanhas">
+                    <a href="https://www.matrizauto.pt/pt/noticias/10-dicas-para-poupar-combustivel/"><img class="direita" src="destaque_noticiais_416x300_2101883194638db66239ad0.png" alt=""></a>
+                </div>
+            </div>
+            <div class="destaques">
+                <div class="carros-destaques">
+                    <h1 class="titulo">Carros em destaque</h1>
+                    <div class="texto-direita">
+                        <a href="https://www.matrizauto.pt/pt/carro-usado/"><span class="carros-usados">> Ver Mais Carros Usados</span></a>
+                    </div>
+                </div>
+                <div class="flex-container" id="destaque" style="flex-direction: row; gap: 30px; justify-content: center;">
+                    <div id="destaque1">
+                        <a href="https://www.matrizauto.pt/pt/carro-usado/mercedes-benz/classe-a/a-160-amg-line/69023/">
+                            <div id="carro1">
+                                <img style="border-top-left-radius: 16px; border-top-right-radius: 16px;" src="small_787780568633f03304c9ff4_26472811.png">
+                            </div>  
+                            <div id="info">
+                                <h2 style="color: black;">Mercedes-Benz Classe A</h2>
+                                <h4>A 160 Amg Line</h4>
+                                <mark id="highlight_texto">Gasolina</mark> <mark  id="highlight_texto"> Manual</mark> <mark id="highlight_texto"> 2021</mark>
+                                <mark id="highlight_texto"> 38.055 km</mark>
+                                <br><br><br>
+                                Comprar a Pronto
+                                <br>
+                                <span id="decoracao" >aaaaaaaaaaaa</span>
+                                <br>
+                            </div>
+                            <div id="preco">
+                                <h1 style="color: #E41819;">31.999€</h1>
+                                <h6>+300€ despesas contratuais</h6>
+
+                                <button style="color: white; background-color: red; border: 0; border-radius: 4px; width: 100px; height: 25px;">Em Destaque</button>
+                            </div>
+                        </a> 
+                    </div>
+                    <div id="destaque1">
+                        <a href="https://www.matrizauto.pt/pt/carro-usado/opel/corsa/corsa-1-2-gs-line/72552/">
+                            <div id="carro2">
+                                <img style="border-top-left-radius: 16px; border-top-right-radius: 16px;" src="small_698885760636389b4a01e76_10943694.png">
+                            </div>   
+                            <div id="info">
+                                <h2 style="color: black;">Opel Corsa</h2>
+                                <h4>Corsa 1.2 Gs-Line</h4>
+                                <mark id="highlight_texto">Gasolina</mark> <mark  id="highlight_texto"> Manual</mark> <mark id="highlight_texto"> 2020</mark>
+                                <mark id="highlight_texto"> 33.971 km</mark>
+                                <br><br><br>
+                                Comprar a Pronto
+                                <br>
+                                <span id="decoracao" >aaaaaaaaaaaa</span>
+                                <br>
+                            </div>
+                            <div id="preco">
+                                <h1 style="color: #E41819;">20.199€</h1>
+                                <h6>+300€ despesas contratuais</h6>
+
+                                <button style="color: white; background-color: red; border: 0; border-radius: 4px; width: 100px; height: 25px;">Em Destaque</button>
+                            </div>                
+                        </a>
+                    </div>
+                    <div id="destaque1">
+                        <a href="https://www.matrizauto.pt/pt/carro-usado/renault/captur/captur-1-5-blue-dci-exclusive/72735/">
+                            <div id="carro3">
+                                <img style="border-top-left-radius: 16px; border-top-right-radius: 16px;" src="small_853537415639b6eae9399e9_55952528.png">
+                            </div>                        
+                            <div id="info">
+                                <h2 style="color: black;">Renault Captur</h2>
+                                <h4>Captur 1.5 Blue Dci Exclusive</h4>
+                                <mark id="highlight_texto">DIESEL</mark> <mark  id="highlight_texto"> Manual</mark> <mark id="highlight_texto"> 2020</mark>
+                                <mark id="highlight_texto"> 37.698 km</mark>
+                                <br><br><br>
+                                Comprar a Pronto
+                                <br>
+                                <span id="decoracao" >aaaaaaaaaaaa</span>
+                                <br>
+                            </div>
+                            <div id="preco">
+                                <h1 style="color: #E41819;">23.999€</h1>
+                                <h6>+300€ despesas contratuais</h6>
+
+                                <button style="color: white; background-color: red; border: 0; border-radius: 4px; width: 100px; height: 25px;">Em Destaque</button>
+                            </div>
+                        </a>                        
+                    </div>
+                    <div id="destaque1">
+                        <a href="https://www.matrizauto.pt/pt/carro-usado/mini/mini/mini-cooper-d/71367/">
+                            <div id="carro4">
+                                <img style="border-top-left-radius: 16px; border-top-right-radius: 16px;" src="small_149859361263af53b288b751_15928954.png">
+                            </div>
+                            <div id="info">
+                                <h2 style="color: black;">Mini Mini</h2>
+                                <h4>Mini Cooper D</h4>
+                                <mark id="highlight_texto">DIESEL</mark> <mark  id="highlight_texto"> Manual</mark> <mark id="highlight_texto"> 2015</mark>
+                                <mark id="highlight_texto"> 108.143 km</mark>
+                                <br><br><br>
+                                Comprar a Pronto
+                                <br>
+                                <span id="decoracao" >aaaaaaaaaaaa</span>
+                                <br>
+                            </div>
+                            <div id="preco">
+                                <h1 style="color: #E41819;">19.499€</h1>
+                                <h6>+300€ despesas contratuais</h6>
+
+                                <button style="color: white; background-color: red; border: 0; border-radius: 4px; width: 100px; height: 25px;">Em Destaque</button>
+                            </div>                        
+                        </a>                        
+                    </div>
+
+                </div>
+            </div>
+            <div class="vantagens">
+                <div class="matrizauto">
+                    <h2>Vantagens Matrizauto</h2>
+                </div>
+                <div class="flex-container" id="vantagens">
+                    <div class="ditas-vantagens">
+                        <a href="https://www.matrizauto.pt/pt/viaturas-selecionadas-e-certificadas/"><img src="vantagens_315x275_1_1861736740637e3b4a3fc9f.png"></a>
+                        <p>Certificação 120 pontos</p>
+                    </div>
+                    <div class="ditas-vantagens">
+                        <a href="https://www.matrizauto.pt/pt/devolucao-ou-troca/"><img src="vantagens_315x275_2_1912096212637e3b543e654.png"></a>
+                        <p>Satisfação ou Devolução</p>
+                    </div>
+                    <div class="ditas-vantagens">
+                        <a href="https://www.matrizauto.pt/pt/garantia-ate-3-anos/"><img src="vantagens_315x275_3_40744853637e3b5b9e4d6.png"></a>
+                        <p>Garantia de até 3 anos</p>
+                    </div>
+                    <div class="ditas-vantagens">
+                        <a href="https://www.matrizauto.pt/pt/tudo-num-so-local/"><img src="vantagens_315x275_4_158678924637e3b63e6841.png"></a>
+                        <p>Tudo num só local</p>
+                    </div>                    
+                </div>
+            </div>
+            <div class="eco">
+                <div class="eco-imagem">
+                    <a href="https://www.matrizauto.pt/pt/carro-usado/marca/modelo/electrico/"><img src="matriz_eco_65879403263075dba627f2.png"></a>
+                </div>
+                <div class="eco-texto">
+                    <h2>Matrizauto eco</h2>
+                    <p>A evolução tecnológica verificada nos últimos anos em relação à autonomia e preço das baterias, a melhor eficiência dos tempos de carga, maior potência, levam à consideração de compra de veículos 100% elétricos, como alternativa a um veículo novo a combustão.
+                        Se está a pensar comprar um veículo elétrico, mas não sabe as implicações positivas que esta compra vai causar na sua vida ou ainda desconhece o conceito de carros elétricos e as suas vantagens, o espaço Matrizauto Eco vai ajuda-lo.
+                    </p>
+                    <button style="width: 175px; height: 50px; background-color: red; color: white; border: 0; border-radius: 6px;">Ver Carros Elétricos</button> 
+                </div>
+            </div>
+            <div class="localizacao" style="padding-bottom: 50px;">
+                <h2>Saiba onde nos encontrar</h2>
+                <div class="flex-container" id="localizacoes" style="padding-top: 50px;">
+                    <div id="local1" class="flex-container" style="flex-direction: column; gap: 40px; align-items: flex-start;">
+                        <div id="imglocal1">
+                            <img style="border-radius: 16px; width: 304; height: 238;" src="porto.png">
+                        </div>
+                        <div id="infolocal1" class="flex-container" style="flex-direction: column; align-items: flex-start; width: 290px;">
+                            <h4>Porto</h4>
+                            <div class="flex-container" style="flex-direction: column; gap: 20px; align-items: flex-start;">
+                                <div><img src="phone-icon.png" style="width: 15px; height: 15px;"><span>226 156 410*</span></div>
+                                <div><img src="location-icon.png" style="width: 15px; height: 15px;"><span>Rua de Santa Luzia Nº 1022 | 4250-415 Porto</span></div>
+                                <div><img src="clock-icon.png" style="width: 15px; height: 15px;"><span>Seg a Sex: 09h - 21h | Fins-de-semana e Feriados: 9h - 21h</span></div>    
+                            </div>  
+                        </div>
+                        <div class="flex-container" style="flex-direction: column; gap: 10px; align-items: flex-start;">
+                           <a href="https://www.google.com/maps/place/Matrizauto/@41.1787587,-8.6235706,17z/data=!3m1!4b1!4m5!3m4!1s0xd2465f2e5103151:0x5fd92e3bf5fda1b!8m2!3d41.1787587!4d-8.6235706">
+                                <img src="google-maps.png" style=" width: 15px; height: 15px;">
+                                <span style="color: #E41819; text-decoration: underline;">Ir para o google maps</span>
+                            </a> 
+                           <a href="https://www.waze.com/en-GB/live-map/directions?navigate=yes&to=ll.41.1787587%2C-8.6257593">
+                                <img src="waze.png" style="width: 15px; height: 15px;">
+                                <span style="color: #E41819; text-decoration: underline;">Ir para a Waze</span>
+                           </a> 
+                        </div>                        
+                    </div>
+                    <div id="local1" class="flex-container" style="flex-direction: column; gap: 40px; align-items: flex-start;">
+                        <div id="imglocal1">
+                            <img style="border-radius: 16px; width: 304; height: 238;" src="sintra.png">
+                        </div>
+                        <div id="infolocal1" class="flex-container" style="flex-direction: column; align-items: flex-start; width: 290px;">
+                            <h4>Sintra</h4>
+                            <div class="flex-container" style="flex-direction: column; gap: 20px; align-items: flex-start;">
+                                <div><img src="phone-icon.png" style="width: 15px; height: 15px;"><span>219 269 600 *</span></div>
+                                <div><img src="location-icon.png" style="width: 15px; height: 15px;"><span>IC19, SAÍDA 13|2725-397 Mem Martins</span></div>
+                                <div><img src="clock-icon.png" style="width: 15px; height: 15px;"><span>Seg a Sex: 09h - 22 h | Fins-de-semana e Feriados: 9h - 21h</span></div>    
+                            </div>  
+                        </div>
+                        <div class="flex-container" style="flex-direction: column; gap: 10px; align-items: flex-start;">
+                           <a href="https://www.google.pt/maps/place/Matrizauto/@38.7794149,-9.3511053,17z/data=!3m1!4b1!4m5!3m4!1s0xd1ecfe1ff30ecb7:0x4842dee061867491!8m2!3d38.7794149!4d-9.3511053?hl=pt-PT">
+                                <img src="google-maps.png" style=" width: 15px; height: 15px;">
+                                <span style="color: #E41819; text-decoration: underline;">Ir para o google maps</span>
+                            </a> 
+                           <a href="https://www.waze.com/en-GB/live-map/directions?navigate=yes&to=ll.38.779345%2C-9.3527337">
+                                <img src="waze.png" style="width: 15px; height: 15px;">
+                                <span style="color: #E41819; text-decoration: underline;">Ir para a Waze</span>
+                           </a> 
+                        </div>                        
+                    </div>
+                    <div id="local1" class="flex-container" style="flex-direction: column; gap: 40px; align-items: flex-start;">
+                        <div id="imglocal1">
+                            <img style="border-radius: 16px; width: 304; height: 238;" src="aveiro.png">
+                        </div>
+                        <div id="infolocal1" class="flex-container" style="flex-direction: column; align-items: flex-start; width: 290px;">
+                            <h4>Aveiro</h4>
+                            <div class="flex-container" style="flex-direction: column; gap: 20px; align-items: flex-start;">
+                                <div><img src="phone-icon.png" style="width: 15px; height: 15px;"><span>234 249 960*</span></div>
+                                <div><img src="location-icon.png" style="width: 15px; height: 15px;"><span>Aveiro Retail Park|Lojas nºC,D,E1 e E2|3800-055 Aveiro</span></div>
+                                <div><img src="clock-icon.png" style="width: 15px; height: 15px;"><span>Seg a Sex: 09h - 22 h | Fins-de-semana e Feriados: 9h - 21h</span></div>    
+                            </div>  
+                        </div>
+                        <div class="flex-container" style="flex-direction: column; gap: 10px; align-items: flex-start;">
+                           <a href="https://www.google.pt/maps/place/Matrizauto/@40.6438003,-8.6084139,17z/data=!3m1!4b1!4m5!3m4!1s0xd239884be9042a7:0xd877cc4a68e4eae1!8m2!3d40.6438003!4d-8.6062252?hl=pt-PT">
+                                <img src="google-maps.png" style=" width: 15px; height: 15px;">
+                                <span style="color: #E41819; text-decoration: underline;">Ir para o google maps</span>
+                            </a> 
+                           <a href="https://www.waze.com/en-GB/live-map/directions?navigate=yes&to=ll.40.6438003%2C-8.6084139">
+                                <img src="waze.png" style="width: 15px; height: 15px;">
+                                <span style="color: #E41819; text-decoration: underline;">Ir para a Waze</span>
+                           </a> 
+                        </div>                        
+                    </div>
+                    <div id="local1" class="flex-container" style="flex-direction: column; gap: 40px; align-items: flex-start;">
+                        <div id="imglocal1">
+                            <img style="border-radius: 16px; width: 304; height: 238;" src="viseu.png">
+                        </div>
+                        <div id="infolocal1" class="flex-container" style="flex-direction: column; align-items: flex-start; width: 290px;">
+                            <h4>Aveiro</h4>
+                            <div class="flex-container" style="flex-direction: column; gap: 20px; align-items: flex-start;">
+                                <div><img src="phone-icon.png" style="width: 15px; height: 15px;"><span>255 788 198*</span></div>
+                                <div><img src="location-icon.png" style="width: 15px; height: 15px;"><span>Viseu Retail Park|Avenida Forte Da Gama, Fragosela|3505-639 Viseu</span></div>
+                                <div><img src="clock-icon.png" style="width: 15px; height: 15px;"><span>Seg a Sex: 09h - 21 h | Fins-de-semana e Feriados: 9h - 21h</span></div>    
+                            </div>  
+                        </div>
+                        <div class="flex-container" style="flex-direction: column; gap: 10px; align-items: flex-start;">
+                           <a href="https://www.google.pt/maps/place/Matrizauto/@40.6338859,-7.8443593,179m/data=!3m1!1e3!4m12!1m6!3m5!1s0xd2334422ada3ca7:0xe9899e3ac5a57e04!2sContinente+Modelo!8m2!3d40.6351034!4d-7.8445354!3m4!1s0xd23344235ce7395:0xe073afad9be0f607!8m2!3d40.6339836!4d-7.8437643">
+                                <img src="google-maps.png" style=" width: 15px; height: 15px;">
+                                <span style="color: #E41819; text-decoration: underline;">Ir para o google maps</span>
+                            </a> 
+                           <a href="https://www.waze.com/en-GB/live-map/directions?navigate=yes&to=ll.40.633873%2C-7.843755">
+                                <img src="waze.png" style="width: 15px; height: 15px;">
+                                <span style="color: #E41819; text-decoration: underline;">Ir para a Waze</span>
+                           </a> 
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <button id="botaoformu" style="width: 175px; height: 50px; background-color: red; color: white; border: 0; border-radius: 12px;">Formulário</button>
+        </center>
+    </div>    
+    <div id="formulario" style="display: none;">
+        <center>
+            <input id="precoaq"type="number" placeholder="Preço de Aquisição">
+            <select id="Quilometragem">
+            <option disabled>Quilometragem</option>
+            <option>0</option>
+            <option>5000</option>
+            <option>10000</option>
+            <option>15000</option>
+            <option>20000</option>
+            <option>25000</option>
+            <option>30000</option>
+            <option>35000</option>
+            <option>40000</option>
+            <option>45000</option>
+            <option>50000</option>
+            <option>55000</option>
+            <option>60000</option>
+            <option>65000</option>
+            <option>70000</option>
+            <option>75000</option>
+            <option>80000</option>
+            <option>85000</option>
+            <option>90000</option>
+            <option>95000</option>
+            <option>100000</option>
+            <option>105000</option>
+            <option>110000</option>
+            <option>115000</option>
+            <option>120000</option>
+            <option>125000</option>
+            <option>130000</option>
+            <option>135000</option>
+            <option>140000</option>
+            <option>145000</option>
+            <option>150000</option>
+            <option>155000</option>
+            <option>160000</option>
+            </select>
+            <select id="Anomatricula">
+            <option disabled>Ano da matricula</option>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            </select>
+            <br><input id="Maarca" type="text" placeholder="Marca"></label>
+            <input id="Moodelo"type="text" placeholder="Modelo"></label>
+            <br><br>
+            <input id="calcular" type="button" onclick="calcular()" value="Calcular" style="width: 175px; height: 50px; background-color: red; color: white; border: 0; border-radius: 12px;">
+        
+            <div id="estado" style="display: none;">
+                
+                <div class="flex-container"id="estados" style="align-items: baseline;">
+                    <div class="flex-container" style="flex-direction: column;">
+                        <div class="estado_mau" id="escondermau2" onclick="mauselecionado()">
+                            Estado mau
+                            <h2><label id="totalmau"></label> €</h2>
+                        </div> 
+                        <div class="escondermau">
+                            <div class="flex-container" style="flex-direction:column; align-items: flex-start;">
+                                <h4>Marca: <label id="marcamau"></label></h4>
+                                <h4>Modelo: <label id="modelomau"></label></h4>
+                                <h4>Quilometragem: <label id="Quilometragemmau"></label> km</h4>
+                                <h4>Ano Da Matricula: <label id="Anomatriculamau"></label></h4>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="flex-container" style="flex-direction:column;">
+                        <div class="estado_bom" id="esconderbom2" onclick="bomselecionado()">
+                            Estado bom
+                            <h2><label id="totalbom"></label> €</h2>
+                        </div>
+                        <div class="esconderbom">
+                            <div class="flex-container" style="flex-direction:column; align-items: flex-start;">
+                                <h4>Marca: <label id="marcabom"></label></h4>
+                                <h4>Modelo: <label id="modelobom"></label></h4>
+                                <h4>Quilometragem: <label id="Quilometragembom"> km</label></h4>
+                                <h4>Ano Da Matricula: <label id="Anomatriculabom"></label></h4>                                
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="flex-container" style="flex-direction:column;">
+                        <div class="estado_muito_bom" id="escondermbom2" onclick="muitobomselecionado()">
+                            Estado muito bom
+                            <h2><label id="totalmbom"></label> €</h2>
+
+                        </div>
+                        <div class="escondermbom">
+                            <div class="flex-container" style="flex-direction:column; align-items: flex-start;">
+                                <h4>Marca: <label id="marcambom"></label></h4>
+                                <h4>Modelo: <label id="modelombom"></label></h4>
+                                <h4>Quilometragem: <label id="Quilometragemmbom"></label></h4>
+                                <h4>Ano Da Matricula: <label id="Anomatriculambom"></label> km</h4>                                
+                            </div>
+
+                        </div>                        
+                    </div>
+
+                </div>
+                <button id="botaofinan" onclick="botaofinanciamento()"style="margin-top: 500px; width: 175px; height: 50px; background-color: red; color: white; border: 0; border-radius: 12px;">Financiamento</button>
+                <div id="financiamento" style="display: none;">
+                    <div class="flex-container" style="flex-direction: row; gap:30px; justify-content: center; padding-top: 50px; padding-bottom: 50px;">
+                        <div style="color: red;"><b>Montante total: <input id="montantetotal" type="number"> €</b></div> 
+                        <div style="color: red;"><b>Prazo: <input id="anos" type="number"> anos</b></div> 
+                        <div style="color: red;"><b>Montante Inicial: <input id="montanteini" type="number"> €</b></div>
+                    </div>
+                    <button onclick="calcularfinan()" style="width: 175px; height: 50px; background-color: red; color: white; border: 0; border-radius: 12px;">Calcular</button>
+                    <div id="tipos de finan" style="display: none; padding-top: 50px; padding-bottom: 50px;">
+                        <div class="flex-container" style="justify-content: center; gap: 250px; padding-left: 5px;">
+                            <div id="cenario1"> 
+                                <h1>Cenario 1</h1>
+                                <div class="flex-container" id="resultados1" style="align-items: flex-start; flex-direction: column; gap: 20px; padding-left: 10px;">
+                                    <span>Montante Total:<label id="montantetotal1"></label>€</span>
+                                    <span>Valor do Empréstimo:<label id="vf1"></label>€</span>
+                                    <span>Duração:<label id="duração1"></label>meses</span>
+                                    <span>Taxa de juro:<label id="Taxa de juro1"> </label>%</span>
+                                    <span>Spread:<label id="spread1"> </label>%</span>
+                                    <span>Valor da entrada Inicial:<label id="entradainicial1"></label>€</span>
+                                    <span>Valor mensal da prestação:<label id="mensalidade1"></label>€</span>                                     
+                                </div>
+                            </div>
+                            <div id="cenario2">
+                                <h1>Cenario 2</h1>
+                                <div class="flex-container" id="resultados2" style="align-items: flex-start; flex-direction: column; gap: 20px; padding-left: 10px;">
+                                    <span>Montante Total:<label id="montantetotal2"></label>€</span>
+                                    <span>Valor do Empréstimo:<label id="vf2"></label>€</span>
+                                    <span>Duração:<label id="duração2"></label> meses</span>
+                                    <span>Taxa de juro:<label id="Taxa de juro2"> </label>%</span>
+                                    <span>Spread:<label id="spread2"> </label>%</span>
+                                    <span>Valor da entrada Inicial:<label id="entradainicial2"></label>€</span>
+                                    <span>Valor mensal da prestação:<label id="mensalidade2"></label>€</span>                             
+                                </div>
+                            </div>
+                            <div id="cenario2">
+                                <h1>Cenario 3</h1>
+                                <div class="flex-container" id="resultados3" style="align-items: flex-start;  flex-direction: column; gap: 20px; padding-left: 10px;">
+                                    <span>Montante Total:<label id="montantetotal3"></label>€</span>
+                                    <span>Valor do Empréstimo:<label id="vf3"></label>€</span>
+                                    <span>Duração:<label id="duração3"></label>meses</span>
+                                    <span>Taxa de juro:<label id="Taxa de juro3"> </label>%</span>
+                                    <span>Spread:<label id="spread3"> </label>%</span>
+                                    <span>Valor da entrada Inicial:<label id="entradainicial3"></label>€</span>
+                                    <span>Valor mensal da prestação:<label id="mensalidade3"></label>€</span>                                    
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+            </div>
+        </center>
+    </div>
+    <div id="footertop" class="flex-container">
+        <div class="flex-container" style="flex-direction: column; gap: 20px; padding-top: 50px; align-items: flex-start;">
+            <img src="logo.svg">
+                Vá dos 0 aos 100 num clique. Siga-nos.
+                <div class="flex-container" style="flex-direction: row; gap: 10px; ">
+                    <a href="https://www.facebook.com/Matrizauto.pt/"><img src="facebook.png" id="redessociais" ></a>
+                    <a href="https://www.instagram.com/matrizauto/"><img src="instagram.png" id="redessociais" ></a>
+                    <a href="https://www.linkedin.com/company/matrizauto-o-shopping-dos-carros/"><img src="linkedin.png" id="redessociais" ></a>
+                    <a href="https://twitter.com/matrizautosc/"><img src="twitter.png" id="redessociais" ></a>
+                </div>
+                © 2023 matrizauto.pt
+        </div>
+        <div>
+            *Chamada para a rede fixa nacional.
+        </div>
+        <div class="flex-container" style="flex-direction: column; gap: 20px; align-items: flex-start; padding-top: 50px;">
+            <b><h2>Subscrever Newsletter</h2></b>
+            <input placeholder="Insira o seu e-mail"></input>
+            <button style="width: 175px; height: 50px; background-color: red; color: white; border: 0; border-radius: 12px;">Subscrever</button>
+        </div>
+    </div>
+    <div id="footerbottom" class="flex-container">
+        <div><a href="https://career2.successfactors.eu/career?company=japgestsa">Recrutamento</a></div>
+        <a href="https://www.matrizauto.pt/pt/apoio-ao-cliente/">Apoio ao Cliente</a>
+        <a href="https://www.matrizauto.pt/pt/ral/">RAL</a>
+        <a href="https://www.matrizauto.pt/pt/politica-de-privacidade/">Política de Privacidade</a>
+        <a href="https://www.livroreclamacoes.pt/Inicio/">Livro de Reclamações Digital</a>
+        <a href="https://www.matrizauto.pt/pt/intermediacao-de-credito/">Intermediação de Crédito</a>
+        <a href="https://lp.egoi.page/1ge1IeMix/RGPD">Cancelar Subscrição de Comunicação</a>
+    </div>
+    <script src="logica.js"></script>
+</body>

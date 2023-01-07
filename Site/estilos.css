@@ -1,0 +1,577 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: white;
+}
+.flex-container{
+    display: flex;  
+    align-items: center;    
+    
+}
+#tab{
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    gap: 20%;
+}
+#menu2{
+    background-color: white;
+    display: flex;
+    margin-right: auto;
+}
+#menu3{
+    gap:10px;
+
+}
+a:link { 
+    text-decoration: none;
+    color: black;
+
+}
+a:visited {
+    color: black;
+}
+
+#textoheader{
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    width: 100%;
+}
+#backgroundimage{
+    padding-top: 100px;
+    box-sizing: border-box;
+    background-image: url(homepage.png);
+    width: 100%;
+    height: 500px;
+}
+#fieldset{
+    width: 25%;
+    border: 0;
+    background-color: white;
+}
+#corpo{
+    height: 3000px;
+    width: 100%;   
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.promocoes{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.promocoes .campanhas{
+    width: 416px;
+    height: 300px;
+    border-radius: 16px;
+    margin-left: 32px;
+}
+
+.promocoes .campanhas:first-child{
+    margin-left: 0;
+}
+
+.promocoes .campanhas img{
+
+    width: 100%;
+    border-radius: 16px;
+
+}
+.promocoes .campanhas .esquerda{
+    object-position: right;
+}
+
+.promocoes .campanhas .direita{
+    object-position: left;
+}
+
+.destaques{
+    margin-top: 100px;
+}
+
+#destaque{
+    flex-direction: row; 
+    gap: 30px; 
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+#destaque1{
+    width: 325px;
+    height: 600px;
+    border-radius: 16px;
+    border-color: lightgrey;
+    border-style: solid;
+}
+#info{
+    margin-left: 30px;
+    border-bottom: solid;
+    border-color: lightgray;
+    width: 250px;
+    color: rgb(123, 123, 123);
+}
+#preco{
+    margin-left: 30px;
+}
+#highlight_texto{
+
+    background-color: rgb(240, 239, 239);
+    color: rgb(149, 149, 149);
+}
+#decoracao{
+
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px;
+}
+.destaques .carros-destaques{
+    display: flex;
+    justify-content: space-between;
+}
+
+.destaques .carros-destaques .titulo{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: black;
+}
+
+.destaques .carros-destaques .texto-direita{
+    align-self: center;
+    color: red;
+    font-size: 23px;
+}
+
+.destaques .carros-destaques .seta{
+    align-self: center;
+}
+.ditas-vantagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.destaques .carros-destaques .carros-usados{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    align-self: center;
+    text-decoration: underline;
+    color: red;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.carros-destaques .container{
+    margin-top: 42px;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.destaques .container .carros{
+    background-color: black;
+    width: 207.75px;
+    
+}
+
+.vantagens{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#vantagens{
+    flex-direction: row; 
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.vantagens .matrizauto{
+    width: 100%;
+    margin-bottom: 42px;
+    flex-grow: 1;
+}
+
+.vantagens .matrizauto h2{
+    font-weight: 400;
+    font-size: 32px;
+    color: black;
+}
+
+
+
+
+
+.eco{
+    display: flex;
+    margin-top: 144px;
+}
+
+.eco .eco-imagem{
+    /*background-color: black;*/
+    width: 640px;
+    max-width: 48.87%;
+    overflow: hidden;
+    margin-right: 32px;
+}
+
+.eco .eco-texto{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 46%;
+}
+
+.eco .eco-texto h2{
+    font-weight: 400;
+    font-size: 32px;
+    text-align: left;
+    color: black;
+    width: 100%;
+    margin-bottom: 13px;
+    margin-top: 0;
+}
+
+.eco .eco-texto p{
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.eco .eco-texto div{
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: red;
+    height: 48px;
+    border-radius: 4px;
+    padding: 16px 24px;
+    margin-top: 48px;
+    cursor: pointer;
+}
+
+.localizacao{
+    margin-top: 100px;
+}
+
+.localizacao h2{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: left;
+    color: black;
+}
+#localizacoes{   
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+#Marca{
+    font-family: sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: gray;
+    
+}
+#Modelo{
+    font-family: sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: gray;
+}
+#selectmenu{
+    font-family: sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: gray;
+}
+#imagens{
+    padding-top: 100px;
+    margin-left: 100px;
+    gap: 2%;
+
+}
+#footertop{
+    background-color: lightgrey;
+    width: 100%;
+    gap: 15%;
+    justify-content: center;
+}
+#footerbottom{
+    padding-top: 50px;
+    background-color: lightgrey;
+    gap: 5%;
+    width: 100%;
+    flex-direction: row;
+    font-size: 12px;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+#redessociais{
+    width: 30px;
+    height: 30px;
+}
+#Anomatricula{
+    font-family: sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: gray;
+    
+}
+#Maarca{
+    font-family: sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: gray;
+    
+}
+#Moodelo{
+    font-family: sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: gray;
+    
+}
+#Quilometragem{
+    font-family: sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: gray;
+    
+}
+#precoaq{
+    font-family: sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: gray;
+    
+}
+#estados{
+    flex-direction: row;
+    justify-content: center;
+    gap: 15%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.estado_mau{
+    border-radius: 25px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background: #e8f6f8;
+    padding: 20px; 
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.escondermau{
+    border-radius: 25px;
+    background: #e8f6f8;
+    padding: 20px; 
+    width: 300px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.estado_mau:not(:hover) + .escondermau {
+    display: none;
+}
+
+.estado_bom{
+    border-radius: 25px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background: #e8f6f8;
+    padding: 20px; 
+    width: 300px; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.esconderbom{
+    border-radius: 25px;
+    background: #e8f6f8;
+    padding: 20px; 
+    width: 300px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.estado_bom:not(:hover) + .esconderbom {
+    display: none;
+}
+.estado_muito_bom{
+    border-radius: 25px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background: #e8f6f8;
+    padding: 20px; 
+    width: 300px; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.escondermbom{
+    border-radius: 25px;
+    background: #e8f6f8;
+    padding: 20px; 
+    width: 300px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.estado_muito_bom:not(:hover) + .escondermbom {
+    display: none;
+}
+#montantetotal{
+    font-family: sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: gray;
+    
+}
+#anos{
+    font-family: sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: gray;
+    
+}
+#montanteini{
+    font-family: sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: gray;
+    
+}
+#cenario1{
+    border: 1;
+    width: 300px;
+    height: 350px;
+    background: #e8f6f8;
+    border-radius: 25px;
+    justify-content: baseline;
+    justify-content: center;
+}
+#cenario2{
+    border: 1;
+    width: 300px;
+    height: 350px;
+    background: #e8f6f8;
+    border-radius: 25px;
+    justify-content: baseline;
+    justify-content: center;
+}
+#cenario3{
+    border: 1;
+    width: 300px;
+    height: 350px;
+    background: #e8f6f8;
+    border-radius: 25px;
+    justify-content: baseline;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+    #vantagens{
+        flex-direction: column;
+        justify-content: center; 
+        gap: 50px;
+    }
+    #localizacoes{   
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    .promocoes{
+        flex-wrap: wrap;
+        margin-top: 28px;
+        flex-direction: column;
+        align-items: center;
+    }
+    #corpo{
+        height: 9000px;
+        width: 100%;   
+        background-color: white;
+    }
+    #destaque{
+        flex-wrap: wrap;
+        margin-top: 28px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .promocoes .campanhas{
+        margin-top: 28px;
+        margin-left: 0;
+    }
+
+    .promocoes .campanhas:first-child{
+        margin-top: 0;
+    }
+
+    .vantagens .ditas-vantagens{
+        margin-top: 0px;
+    }
+
+    .vantagens .ditas-vantagens:nth-child(4),
+    .vantagens .ditas-vantagens:nth-child(5),
+    .vantagens .ditas-vantagens:nth-child(6){
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #corpo{
+        height: 10000px;
+        width: 100%;   
+        background-color: white;
+    }
+    .wrapper{
+        padding: 0 17px;
+    }
+
+    .destaques .carros-destaques{
+        flex-wrap: wrap;
+    }
+
+    .destaques .carros-destaques .titulo{
+        margin-bottom: 20px;
+    }
+
+    .vantagens {
+        justify-content: center;
+    }
+
+    .vantagens .ditas-vantagens:nth-child(2){
+        margin-bottom: 50px;
+    }
+}
